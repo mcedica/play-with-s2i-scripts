@@ -1,3 +1,5 @@
+FROM       openjdk:8-jdk
+MAINTAINER Nuxeo <packagers@nuxeo.com>
 WORKDIR $NUXEO_HOME
 
 EXPOSE 8080
