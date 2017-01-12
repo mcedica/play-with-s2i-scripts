@@ -15,7 +15,7 @@ LABEL io.k8s.description="Nuxeo Webserver" \
     io.openshift.tags="builder,webserver,nuxeo" \
     # this label tells s2i where to find its mandatory scripts
     # (run, assemble, save-artifacts)
-##io.openshift.s2i.scripts-url="image:///usr/libexec/s2i"
+#io.openshift.s2i.scripts-url="image:///usr/libexec/s2i"
 
 
 
