@@ -1,4 +1,4 @@
-FROM       openjdk:8-jdk
+FROM       mcedica:nuxeoplay
 MAINTAINER Nuxeo <packagers@nuxeo.com>
 WORKDIR $NUXEO_HOME
 
