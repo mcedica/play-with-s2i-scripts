@@ -2,8 +2,7 @@
 
 NUXEO_CONF=$NUXEO_HOME/bin/nuxeo.conf
 echo "In assemble phase"
-# Fix source directory permissions
-fix-permissions ./
+
 # set permissions for any installed artifacts
 fix-permissions /var
 
