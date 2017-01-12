@@ -12,10 +12,9 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 LABEL io.k8s.description="Nuxeo Webserver" \
     io.k8s.display-name="Nuxeo 8.10" \
     io.openshift.expose-services="8080:http" \
-    io.openshift.tags="builder,webserver,nuxeo" \
+    io.openshift.tags="builder,webserver,nuxeo" 
     # this label tells s2i where to find its mandatory scripts
     # (run, assemble, save-artifacts)
-io.openshift.s2i.scripts-url="image:///usr/libexec/s2i"
 
 
 
