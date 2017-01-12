@@ -3,8 +3,6 @@
 NUXEO_CONF=$NUXEO_HOME/bin/nuxeo.conf
 echo "In assemble phase"
 
-# set permissions for any installed artifacts
-fix-permissions /var
 
 echo $NUXEO_CONF
   if [ ! -f $NUXEO_HOME/configured ]; then
