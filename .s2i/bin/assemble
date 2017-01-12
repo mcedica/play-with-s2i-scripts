@@ -1,3 +1,2 @@
 #!/bin/bash
 echo "Before assembling"
-exit 1
