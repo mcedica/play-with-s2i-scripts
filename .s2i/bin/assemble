@@ -2,7 +2,7 @@
 
 NUXEO_CONF=$NUXEO_HOME/bin/nuxeo.conf
 echo "In assemble phase"
-echo $USER
+whoami
 echo $NUXEO_CONF
   if [ ! -f $NUXEO_HOME/configured ]; then
 
