@@ -2,6 +2,8 @@
 
 NUXEO_CONF=$NUXEO_HOME/bin/nuxeo.conf
 echo "In assemble phase"
+echo "Let's see if we have any secrets"
+ls
 
 
 echo $NUXEO_CONF
