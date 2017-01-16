@@ -6,8 +6,12 @@ echo "Let's see if we have any secrets"
 ls
 cat clid
 
-
-echo $NUXEO_CONF
+ if [ -n "$NUXEO_SECRETS" ]; then
+ echo "let's see the list of secrets"
+    echo $"$NUXEO_SECRETS"
+ fi
+ 
+ echo $NUXEO_CONF
   if [ ! -f $NUXEO_HOME/configured ]; then
 
     # PostgreSQL conf
