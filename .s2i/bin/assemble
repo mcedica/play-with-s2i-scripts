@@ -1,11 +1,6 @@
 #!/bin/bash -e
 
 NUXEO_CONF=$NUXEO_HOME/bin/nuxeo.conf
-echo "In assemble phase"
-echo "Let's see if we have any secrets"
-ls
-cat clid
-
  
  
  echo $NUXEO_CONF
@@ -119,9 +114,7 @@ EOF
     echo "Registering Nuxeo Instance..."
     if [ -f "$NUXEO_CLID" ]; then
        echo "This value is a secret, reading value:"
-       NUXEO_CLID="$(bash <<EOF
-         cat $ NUXEO_CLID
-         EOF)"
+       NUXEO_CLID="$(cat $NUXEO_CLID)"
     fi
     echo "!!!REMOVE ME: your NUXEO_CLID="
     echo $NUXEO_CLID
